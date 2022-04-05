@@ -1,11 +1,24 @@
 {
-  "name": "web-dev-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "type": "module",
+    "name": "web-dev-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amymin00/web-dev-server.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/amymin00/web-dev-server/issues"
+    },
+    "homepage": "https://github.com/amymin00/web-dev-server#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.3"
+    }
 }
