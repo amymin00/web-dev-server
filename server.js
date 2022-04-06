@@ -5,7 +5,8 @@ import helloController  from "./controllers/hello-controller.js";
 import userController   from "./controllers/user-controller.js";
 import tuitsController from './controllers/tuits-controller.js';
 
-const uri = "mongodb+srv://mina00:W&iQcQo7hrJSmxL^@cluster0.jb1wc.mongodb.net/webdev?retryWrites=true&w=majority";
+// const uri = "mongodb+srv://mina00:W&iQcQo7hrJSmxL^@cluster0.jb1wc.mongodb.net/webdev?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI;
 mongoose.connect(uri);
 
 // Use middleware
