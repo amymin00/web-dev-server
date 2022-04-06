@@ -5,7 +5,8 @@ import helloController  from "./controllers/hello-controller.js";
 import userController   from "./controllers/user-controller.js";
 import tuitsController from './controllers/tuits-controller.js';
 
-mongoose.connect('mongodb://localhost:27017/webdev');
+const uri = "mongodb+srv://mina00:W&iQcQo7hrJSmxL^@cluster0.jb1wc.mongodb.net/webdev?retryWrites=true&w=majority";
+mongoose.connect(uri);
 
 // Use middleware
 const app = express();
