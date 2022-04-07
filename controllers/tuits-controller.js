@@ -2,6 +2,7 @@ import * as tuitsDao from '../tuits-dao.js';
 
 const createTuit = async (req, res) => {
     const newTuit = req.body;
+    newTuit._id = (new Date()).getTime() + '',
     newTuit.likes = 0;
     const insertedTuit = await tuitsDao.createTuit(newTuit);
     res.json(insertedTuit);
